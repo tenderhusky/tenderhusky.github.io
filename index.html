@@ -215,8 +215,18 @@ layout: null
         <p class="text-lg text-slate-grey">Fill out the form below to request access. We limit subscriptions by region to maintain your competitive advantage.</p>
       </div>
 
-      <!-- Note: Replace the action URL with your own form handler like Formspree or Netlify Forms -->
-      <form class="bg-slate-50 p-8 md:p-10 rounded border border-slate-200 shadow-sm" action="https://formspree.io/f/your_form_id" method="POST">
+      <!-- Web3Forms Integration -->
+      <form class="bg-slate-50 p-8 md:p-10 rounded border border-slate-200 shadow-sm" action="https://api.web3forms.com/submit" method="POST">
+        
+        <!-- Web3Forms Access Key (Replace YOUR_ACCESS_KEY_HERE with your actual key) -->
+        <input type="hidden" name="access_key" value="221f337c-ea37-4fa4-bfcf-973eb65a176e">
+        
+        <!-- Custom Email Subject -->
+        <input type="hidden" name="subject" value="New Lead from TenderHusky!">
+        
+        <!-- Spam Prevention (Honeypot) -->
+        <input type="checkbox" name="botcheck" class="hidden" style="display: none;">
+
         <div class="grid md:grid-cols-2 gap-6 mb-6">
           <div>
             <label for="firstName" class="block text-sm font-bold text-navy uppercase tracking-wide mb-2">First Name</label>
