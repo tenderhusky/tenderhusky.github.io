@@ -1,0 +1,275 @@
+---
+layout: null
+---
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>TenderHusky | Custom, Hyper-Local Bid Hunting</title>
+  
+  <!-- Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700;800;900&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+  
+  <!-- Tailwind CSS via CDN -->
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          fontFamily: {
+            sans: ['Inter', 'sans-serif'],
+            display: ['Montserrat', 'sans-serif'],
+          },
+          colors: {
+            navy: '#1B263B',
+            orange: '#F77F00',
+            'slate-grey': '#475569',
+          }
+        }
+      }
+    }
+  </script>
+
+  <!-- Lucide Icons -->
+  <script src="https://unpkg.com/lucide@latest"></script>
+</head>
+<body class="min-h-screen bg-slate-50 font-sans text-slate-900 selection:bg-orange selection:text-white">
+  <!-- Navigation -->
+  <nav class="bg-navy text-white py-4 px-6 md:px-12 flex justify-between items-center border-b-4 border-orange sticky top-0 z-50">
+    <div class="flex items-center gap-2">
+      <img src="logo.png" class="w-8 h-8 object-contain rounded" alt="TenderHusky Logo">
+      <span class="font-display font-bold text-2xl tracking-tight">Tender<span class="text-orange">Husky</span></span>
+    </div>
+    <a href="#contact" class="hidden md:inline-flex items-center justify-center bg-orange hover:bg-orange/90 text-white font-bold py-2 px-6 rounded transition-colors duration-200 uppercase tracking-wide text-sm">
+      Get Access
+    </a>
+  </nav>
+
+  <!-- Hero Section -->
+  <header class="relative bg-navy text-white pt-20 pb-32 px-6 md:px-12 overflow-hidden">
+    <div class="absolute inset-0 opacity-10" style="background-image: radial-gradient(#ffffff 1px, transparent 1px); background-size: 32px 32px;"></div>
+    
+    <div class="max-w-5xl mx-auto relative z-10">
+      <div class="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-slate-800 border border-slate-700 text-orange font-semibold text-sm mb-8 uppercase tracking-wider">
+        <i data-lucide="shield-check" class="w-4 h-4"></i>
+        Custom, Hyper-Local Bid Hunting
+      </div>
+      <h1 class="font-display font-black text-5xl md:text-7xl leading-tight mb-6 uppercase tracking-tighter">
+        Find the Bids <br class="hidden md:block">
+        <span class="text-orange">The Big Boards Miss.</span>
+      </h1>
+      <p class="text-lg md:text-xl text-slate-300 max-w-3xl mb-10 leading-relaxed font-medium">
+        We monitor local county, municipal, and school district portals to find hidden opportunities—high-value government contracts that haven't hit the major national databases yet.
+      </p>
+      <div class="flex flex-col sm:flex-row gap-4">
+        <a href="#contact" class="inline-flex items-center justify-center bg-orange hover:bg-orange/90 text-white font-bold py-4 px-8 rounded text-lg transition-transform hover:-translate-y-1 duration-200 shadow-lg shadow-orange/20 uppercase tracking-wide">
+          Get Your Morning Bid Report
+          <i data-lucide="arrow-right" class="ml-2 w-5 h-5"></i>
+        </a>
+      </div>
+    </div>
+  </header>
+
+  <!-- The Local Advantage -->
+  <section class="py-24 px-6 md:px-12 bg-white border-b border-slate-200">
+    <div class="max-w-7xl mx-auto">
+      <div class="text-center mb-16">
+        <h2 class="font-display font-extrabold text-3xl md:text-4xl text-navy uppercase tracking-tight mb-4">The Local Advantage</h2>
+        <div class="w-24 h-1 bg-orange mx-auto"></div>
+      </div>
+      
+      <div class="grid md:grid-cols-3 gap-12">
+        <div class="bg-slate-50 p-8 rounded border border-slate-200 shadow-sm relative overflow-hidden group hover:border-orange transition-colors">
+          <div class="absolute top-0 left-0 w-1 h-full bg-navy group-hover:bg-orange transition-colors"></div>
+          <div class="bg-navy/5 w-14 h-14 rounded flex items-center justify-center mb-6">
+            <i data-lucide="shield-check" class="w-7 h-7 text-navy"></i>
+          </div>
+          <h3 class="font-display font-bold text-xl text-navy mb-4 uppercase">Direct Sourcing</h3>
+          <p class="text-slate-grey leading-relaxed">
+            Many local agencies use obscure sub-pages to host PDFs. Aggregator bots miss them. <strong class="text-navy">We don't.</strong>
+          </p>
+        </div>
+
+        <div class="bg-slate-50 p-8 rounded border border-slate-200 shadow-sm relative overflow-hidden group hover:border-orange transition-colors">
+          <div class="absolute top-0 left-0 w-1 h-full bg-navy group-hover:bg-orange transition-colors"></div>
+          <div class="bg-navy/5 w-14 h-14 rounded flex items-center justify-center mb-6">
+            <i data-lucide="clock" class="w-7 h-7 text-navy"></i>
+          </div>
+          <h3 class="font-display font-bold text-xl text-navy mb-4 uppercase">The Early Head Start</h3>
+          <p class="text-slate-grey leading-relaxed">
+            Big databases can take days to process and upload bids. We deliver the raw PDF and a clear summary to your inbox <strong class="text-navy">shortly after issuance.</strong>
+          </p>
+        </div>
+
+        <div class="bg-slate-50 p-8 rounded border border-slate-200 shadow-sm relative overflow-hidden group hover:border-orange transition-colors">
+          <div class="absolute top-0 left-0 w-1 h-full bg-navy group-hover:bg-orange transition-colors"></div>
+          <div class="bg-navy/5 w-14 h-14 rounded flex items-center justify-center mb-6">
+            <i data-lucide="map-pin" class="w-7 h-7 text-navy"></i>
+          </div>
+          <h3 class="font-display font-bold text-xl text-navy mb-4 uppercase">Custom Bid Hunting</h3>
+          <p class="text-slate-grey leading-relaxed">
+            We focus on your specific <strong class="text-navy">target region</strong> and criteria, ensuring you only see the projects that matter to your business.
+          </p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- How It Works -->
+  <section class="py-24 px-6 md:px-12 bg-slate-100">
+    <div class="max-w-5xl mx-auto">
+      <div class="flex flex-col md:flex-row gap-16 items-center">
+        <div class="md:w-1/2">
+          <h2 class="font-display font-extrabold text-3xl md:text-4xl text-navy uppercase tracking-tight mb-4">How It Works</h2>
+          <div class="w-24 h-1 bg-orange mb-8"></div>
+          <p class="text-lg text-slate-grey mb-8">
+            We've built specialized tools to monitor the portals that matter to your business, delivering actionable updates while your competitors are still waiting.
+          </p>
+        </div>
+        
+        <div class="md:w-1/2 space-y-8">
+          <div class="flex gap-6">
+            <div class="flex-shrink-0 w-12 h-12 bg-navy text-white font-display font-black text-xl flex items-center justify-center rounded">1</div>
+            <div>
+              <h4 class="font-bold text-lg text-navy mb-2">Nightly Monitoring</h4>
+              <p class="text-slate-grey">We scan hundreds of fragmented local procurement portals every night.</p>
+            </div>
+          </div>
+          
+          <div class="flex gap-6">
+            <div class="flex-shrink-0 w-12 h-12 bg-navy text-white font-display font-black text-xl flex items-center justify-center rounded">2</div>
+            <div>
+              <h4 class="font-bold text-lg text-navy mb-2">Data Extraction</h4>
+              <p class="text-slate-grey">We pull out the key details: Square footage, mandatory walkthrough dates, and bond requirements.</p>
+            </div>
+          </div>
+          
+          <div class="flex gap-6">
+            <div class="flex-shrink-0 w-12 h-12 bg-orange text-white font-display font-black text-xl flex items-center justify-center rounded shadow-lg shadow-orange/20">3</div>
+            <div>
+              <h4 class="font-bold text-lg text-navy mb-2">The Morning Report</h4>
+              <p class="text-slate-grey">You get a clean, easy-to-read summary in your inbox every morning.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Pricing Section -->
+  <section class="py-24 px-6 md:px-12 bg-navy text-white relative">
+    <div class="absolute inset-0 opacity-5" style="background-image: linear-gradient(45deg, #ffffff 25%, transparent 25%, transparent 75%, #ffffff 75%, #ffffff), linear-gradient(45deg, #ffffff 25%, transparent 25%, transparent 75%, #ffffff 75%, #ffffff); background-size: 20px 20px; background-position: 0 0, 10px 10px;"></div>
+    
+    <div class="max-w-4xl mx-auto relative z-10">
+      <div class="text-center mb-16">
+        <h2 class="font-display font-extrabold text-3xl md:text-4xl uppercase tracking-tight mb-4">Straightforward Pricing</h2>
+        <div class="w-24 h-1 bg-orange mx-auto"></div>
+      </div>
+
+      <div class="bg-white text-navy rounded-lg overflow-hidden shadow-2xl max-w-lg mx-auto border-t-8 border-orange">
+        <div class="p-8 md:p-10 text-center border-b border-slate-100">
+          <h3 class="font-display font-black text-2xl uppercase tracking-wide mb-2">The Daily Dispatch</h3>
+          <div class="flex items-center justify-center gap-1 mb-4">
+            <span class="text-3xl font-bold text-slate-400">$</span>
+            <span class="text-6xl font-black tracking-tighter">500</span>
+            <span class="text-xl font-bold text-slate-400 self-end mb-2">/mo</span>
+          </div>
+          <p class="text-slate-500 font-medium">No long-term contracts. Cancel anytime.</p>
+        </div>
+        
+        <div class="p-8 md:p-10 bg-slate-50">
+          <ul class="space-y-4 mb-8">
+            <li class="flex items-start gap-3">
+              <i data-lucide="check-circle-2" class="w-6 h-6 text-orange flex-shrink-0"></i>
+              <span class="font-medium text-slate-700">Daily morning email alerts</span>
+            </li>
+            <li class="flex items-start gap-3">
+              <i data-lucide="check-circle-2" class="w-6 h-6 text-orange flex-shrink-0"></i>
+              <span class="font-medium text-slate-700">Full PDF extraction & summaries</span>
+            </li>
+            <li class="flex items-start gap-3">
+              <i data-lucide="check-circle-2" class="w-6 h-6 text-orange flex-shrink-0"></i>
+              <span class="font-medium text-slate-700">Mandatory meeting reminders</span>
+            </li>
+            <li class="flex items-start gap-3">
+              <i data-lucide="check-circle-2" class="w-6 h-6 text-orange flex-shrink-0"></i>
+              <span class="font-medium text-slate-700">Direct contact info for purchasing agents</span>
+            </li>
+          </ul>
+          <a href="#contact" class="block w-full text-center bg-navy hover:bg-navy/90 text-white font-bold py-4 px-6 rounded transition-colors duration-200 uppercase tracking-wide">
+            Start Your Subscription
+          </a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Contact / Lead Form -->
+  <section id="contact" class="py-24 px-6 md:px-12 bg-white">
+    <div class="max-w-3xl mx-auto">
+      <div class="text-center mb-12">
+        <h2 class="font-display font-extrabold text-3xl md:text-4xl text-navy uppercase tracking-tight mb-4">Start Finding Better Bids</h2>
+        <p class="text-lg text-slate-grey">Fill out the form below to request access. We limit subscriptions by region to maintain your competitive advantage.</p>
+      </div>
+
+      <!-- Note: Replace the action URL with your own form handler like Formspree or Netlify Forms -->
+      <form class="bg-slate-50 p-8 md:p-10 rounded border border-slate-200 shadow-sm" action="https://formspree.io/f/your_form_id" method="POST">
+        <div class="grid md:grid-cols-2 gap-6 mb-6">
+          <div>
+            <label for="firstName" class="block text-sm font-bold text-navy uppercase tracking-wide mb-2">First Name</label>
+            <input type="text" id="firstName" name="firstName" class="w-full px-4 py-3 rounded bg-white border border-slate-300 focus:border-orange focus:ring-2 focus:ring-orange/20 outline-none transition-all" placeholder="John" required>
+          </div>
+          <div>
+            <label for="lastName" class="block text-sm font-bold text-navy uppercase tracking-wide mb-2">Last Name</label>
+            <input type="text" id="lastName" name="lastName" class="w-full px-4 py-3 rounded bg-white border border-slate-300 focus:border-orange focus:ring-2 focus:ring-orange/20 outline-none transition-all" placeholder="Doe" required>
+          </div>
+        </div>
+        
+        <div class="mb-6">
+          <label for="company" class="block text-sm font-bold text-navy uppercase tracking-wide mb-2">Company Name</label>
+          <input type="text" id="company" name="company" class="w-full px-4 py-3 rounded bg-white border border-slate-300 focus:border-orange focus:ring-2 focus:ring-orange/20 outline-none transition-all" placeholder="Builders LLC" required>
+        </div>
+
+        <div class="mb-6">
+          <label for="email" class="block text-sm font-bold text-navy uppercase tracking-wide mb-2">Work Email</label>
+          <input type="email" id="email" name="email" class="w-full px-4 py-3 rounded bg-white border border-slate-300 focus:border-orange focus:ring-2 focus:ring-orange/20 outline-none transition-all" placeholder="john@builders.com" required>
+        </div>
+        
+        <div class="mb-8">
+          <label for="territory" class="block text-sm font-bold text-navy uppercase tracking-wide mb-2">Target Region / Counties</label>
+          <input type="text" id="territory" name="territory" class="w-full px-4 py-3 rounded bg-white border border-slate-300 focus:border-orange focus:ring-2 focus:ring-orange/20 outline-none transition-all" placeholder="e.g., Cook County, IL" required>
+        </div>
+
+        <button type="submit" class="w-full bg-orange hover:bg-orange/90 text-white font-bold py-4 px-6 rounded text-lg transition-colors duration-200 uppercase tracking-wide flex items-center justify-center gap-2">
+          <i data-lucide="mail" class="w-5 h-5"></i>
+          Request Access
+        </button>
+        <p class="text-center text-sm text-slate-500 mt-4">We'll review your request and get back to you within 24 hours.</p>
+      </form>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="bg-navy text-slate-400 py-12 px-6 md:px-12 border-t border-slate-800">
+    <div class="max-w-7xl mx-auto flex flex-col md:flex-row justify-between items-center gap-6">
+      <div class="flex items-center gap-2">
+        <img src="logo.png" class="w-6 h-6 object-contain rounded" alt="TenderHusky Logo">
+        <span class="font-display font-bold text-xl text-white tracking-tight">Tender<span class="text-orange">Husky</span></span>
+      </div>
+      
+      <div class="text-center md:text-right">
+        <p class="font-medium text-slate-300 mb-1">TenderHusky.com | Custom, Hyper-Local Bid Hunting.</p>
+        <p class="text-sm">Copyright &copy; 2026 TenderHusky. All rights reserved.</p>
+      </div>
+    </div>
+  </footer>
+
+  <script>
+    // Initialize Lucide icons
+    lucide.createIcons();
+  </script>
+</body>
+</html>
